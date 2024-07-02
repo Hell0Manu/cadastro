@@ -2,7 +2,8 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preload" href="https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp" as="image">
+    <link rel="preload" href="https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp"
+        as="image">
     <jsp:include page="/sults/components/default/include_meta.jsp">
         <jsp:param name="meta_title" value="SULTS: Solicite agora uma avaliação gratuita" />
         <jsp:param name="meta_description"
@@ -28,7 +29,7 @@
             width: 100%;
             max-width: 1440px;
             overflow-x: auto;
-            max-height:  90vh;
+            max-height: 90vh;
             border-radius: 12px;
         }
 
@@ -54,6 +55,7 @@
             align-items: center;
             border-radius: 12px;
             justify-content: center;
+            max-width: 600px;
         }
 
         .conta-success-container {
@@ -190,7 +192,7 @@
             margin: 0;
             font-weight: 400;
             font-size: 1rem;
-            
+
             /* text-align: center; */
         }
 
@@ -305,14 +307,14 @@
             }
 
             50 % {
-                stroke-dashoffset:   46.75;
-                -webkit-transform:  rotate(135deg);
+                stroke-dashoffset: 46.75;
+                -webkit-transform: rotate(135deg);
                 transform: rotate(135deg);
             }
 
             100 % {
-                stroke-dashoffset:  187;
-                -webkit-transform:rotate(450deg);
+                stroke-dashoffset: 187;
+                -webkit-transform: rotate(450deg);
                 transform: rotate(450deg);
             }
         }
@@ -336,34 +338,56 @@
         }
 
         .container-img-register {
-    width: 100%;
-    background: #fbfdfe;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
-    overflow: hidden;
-    grid-template-columns: 870px 570px;
-    display: grid;
-    z-index: 1000;
-}
+            width: 100%;
+            background: #fbfdfe;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+            overflow: hidden;
+            grid-template-columns: 870px 570px;
+            display: grid;
+            z-index: 1000;
+        }
 
+        .right-logo-div {
+            background: #202c3a;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
 
+        .copy {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            bottom: -120px;
+        }
 
-.right-logo-div {
-        background: #202c3a;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+        .conta-register-container form+p {
+            width: 75%;
+        }
 
-.copy {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    bottom: -120px;
-}
+        .logo-sults {
+            position: absolute;
+        }
 
+        .copy img {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width : 1459px) {
+
+            .right-logo-div,
+            .copy {
+                display: none;
+            }
+
+            .container-img-register {
+                grid-template-columns: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -373,12 +397,14 @@
             <div class="container-img-register">
                 <div class="right-logo-div">
                     <div class="logos">
-                        <img class="img-logo" src="Column.png" alt="sults cadastro">
+                        <img class="logo-sults" src="Logo.webp" alt="logo sults">
+                        <img class="img-logo" src="Column.webp" alt="sults cadastro">
                     </div>
                 </div>
 
                 <div class="conta-register-container">
-                    <h1 style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; margin-left: 60px;margin-right: 60px;;">
+                    <h1
+                        style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; width: 75%;">
                         Seu espaço de trabalho começa aqui</h1>
 
                     <form name="form-register" class="form-register" method="post">
@@ -422,12 +448,14 @@
                     </p> -->
                     <p>
                         Já tem uma conta? <a href="https://app.sults.com.br" class="register-link">Fazer login</a>
+
                     
-                        <div class="copy">
-                            <img src="logo-sults-light.svg" alt="logo sults light">
-                            <p>© 2024 SULTS Tecnology. All Rights Reserved.</p>
-                        </div>
                     </p>
+
+                    <div class="copy">
+                        <img src="logo-sults-light.svg" alt="logo sults light">
+                        <p>© 2024 SULTS Tecnology. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
             <div class="conta-success-container">
