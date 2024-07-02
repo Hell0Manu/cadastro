@@ -11,25 +11,24 @@
     </jsp:include>
     <style>
         body {
-            background-image:
-                url("https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp");
-            background-size: cover;
-            background-position: top;
+            /* background-image: url("https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp");
+            background-size: cover; */
+            /* background-position: top; */
             margin: 0;
             padding: 0;
-            height: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            /* height: 100%;
+            min-height: 100vh; */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
         }
 
         .conta-register-section {
             margin: 0;
             width: 100%;
-            max-width: 1440px;
+            /* max-width: 1440px; */
             overflow-x: auto;
-            max-height: 90vh;
+            /* max-height: 90vh; */
             border-radius: 12px;
         }
 
@@ -55,7 +54,7 @@
             align-items: center;
             border-radius: 12px;
             justify-content: center;
-            max-width: 600px;
+            /* max-width: 600px; */
         }
 
         .conta-success-container {
@@ -74,9 +73,9 @@
         }
 
         @media (max-width : 768px) {
-            body {
+            /* body {
                 background-image: none !important;
-            }
+            } */
 
             .conta-register-container,
             .conta-success-container {
@@ -87,10 +86,6 @@
                 text-align: left !important;
                 font-size: 2.2rem !important;
             }
-
-            .conta-register-container form+p, h1 {
-            width: 100%;
-        }
 
             .form-register {
                 width: 100%;
@@ -109,10 +104,6 @@
             .form-register {
                 width: 75%;
             }
-
-            .conta-register-container form+p, h1 {
-            width: 75%;
-        }
 
             .scroll {
                 overflow: auto;
@@ -349,9 +340,10 @@
             width: 100%;
             background: #fbfdfe;
             border-radius: 8px;
-            /* box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2); */
+            box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
             overflow: hidden;
-            grid-template-columns: 870px 570px;
+            grid-template-columns: 60% 40%;
+			height: 100vh;
             display: grid;
             z-index: 1000;
         }
@@ -373,7 +365,9 @@
             bottom: -120px;
         }
 
-
+        .conta-register-container form+p {
+            width: 75%;
+        }
 
         .logo-sults {
             position: absolute;
@@ -381,6 +375,7 @@
 
         .copy img {
             margin-bottom: 15px;
+			
         }
 
         @media (max-width : 1459px) {
@@ -410,7 +405,7 @@
 
                 <div class="conta-register-container">
                     <h1
-                        style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; ">
+                        style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; width: 75%;">
                         Seu espaço de trabalho começa aqui</h1>
 
                     <form name="form-register" class="form-register" method="post">
@@ -459,7 +454,7 @@
                     </p>
 
                     <div class="copy">
-                        <img src="logo-sults-light.svg" alt="logo sults light">
+                        <img src="logo-sults-light.webp" alt="logo sults light">
                         <p>© 2024 SULTS Tecnology. All Rights Reserved.</p>
                     </div>
                 </div>
