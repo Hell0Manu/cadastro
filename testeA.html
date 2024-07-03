@@ -28,8 +28,9 @@
             width: 100%;
             /* max-width: 1440px; */
             overflow-x: auto;
-            /* max-height: 90vh; */
+           /*  max-height: 90vh; */
             border-radius: 12px;
+           
         }
 
         .register-link {
@@ -55,6 +56,7 @@
             border-radius: 12px;
             justify-content: center;
             /* max-width: 600px; */
+            min-height: 100vh; 
         }
 
         .conta-success-container {
@@ -98,12 +100,24 @@
             .conta-register-section {
                 overflow-x: visible;
             }
+            
+            
+        .conta-register-container form+p, h1 {
+            width: 100%;
+        }
+            
         }
 
         @media (min-width : 768px) {
             .form-register {
                 width: 75%;
             }
+            
+            
+        .conta-register-container form+p, h1 {
+            width: 75%;
+        }
+            
 
             .scroll {
                 overflow: auto;
@@ -336,14 +350,13 @@
             }
         }
 
-        .container-img-register {
+        .content-img-register {
             width: 100%;
             background: #fbfdfe;
             border-radius: 8px;
             box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
             overflow: hidden;
             grid-template-columns: 60% 40%;
-			height: 100vh;
             display: grid;
             z-index: 1000;
         }
@@ -361,21 +374,12 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            position: relative;
-            bottom: -120px;
+            margin-top: 100px; 
         }
 
-        .conta-register-container form+p {
-            width: 75%;
-        }
-
-        .logo-sults {
-            position: absolute;
-        }
 
         .copy img {
             margin-bottom: 15px;
-			
         }
 
         @media (max-width : 1459px) {
@@ -385,27 +389,26 @@
                 display: none;
             }
 
-            .container-img-register {
+            .content-img-register {
                 grid-template-columns: 100%;
             }
         }
+        
+
     </style>
 </head>
 
 <body>
     <main>
         <section class="conta-register-section scroll">
-            <div class="container-img-register">
+            <div class="content-img-register">
                 <div class="right-logo-div">
-                    <div class="logos">
-                        <img class="logo-sults" src="Logo.webp" alt="logo sults">
-                        <img class="img-logo" src="Column.webp" alt="sults cadastro">
-                    </div>
+                        <img class="img-left" src="Column.webp" alt="sults cadastro">
                 </div>
 
                 <div class="conta-register-container">
                     <h1
-                        style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; width: 75%;">
+                        style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; ">
                         Seu espaço de trabalho começa aqui</h1>
 
                     <form name="form-register" class="form-register" method="post">
