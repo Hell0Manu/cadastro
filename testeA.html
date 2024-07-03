@@ -21,6 +21,7 @@
             /* display: flex; */
             /* justify-content: center;
             align-items: center; */
+           
         }
 
         .conta-register-section {
@@ -29,7 +30,7 @@
             /* max-width: 1440px; */
             overflow-x: auto;
            /*  max-height: 90vh; */
-            border-radius: 12px;
+           /* border-radius: 12px;*/
            
         }
 
@@ -53,7 +54,7 @@
             padding: 2rem;
             flex-direction: column;
             align-items: center;
-            border-radius: 12px;
+            /*border-radius: 12px;*/
             justify-content: center;
             /* max-width: 600px; */
             min-height: 100vh; 
@@ -361,12 +362,13 @@
             z-index: 1000;
         }
 
-        .right-logo-div {
-            background: #202c3a;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+        .left-logo-div {
+            background-image: url("/Column.webp");
+            width: 100%;
+            height: 100vh;
+            background-size: cover; 
+            background-position: center; 
+           
             position: relative;
         }
 
@@ -384,7 +386,7 @@
 
         @media (max-width : 1459px) {
 
-            .right-logo-div,
+            .left-logo-div,
             .copy {
                 display: none;
             }
@@ -402,10 +404,7 @@
     <main>
         <section class="conta-register-section scroll">
             <div class="content-img-register">
-                <div class="right-logo-div">
-                        <img class="img-left" src="Column.webp" alt="sults cadastro">
-                </div>
-
+                <div class="left-logo-div"></div>
                 <div class="conta-register-container">
                     <h1
                         style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px; ">

@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <link rel="preload"
-	href="/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp"
-	as="image"><jsp:include
-	page="/sults/components/default/include_meta.jsp"><jsp:param
-		name="meta_title" value="SULTS: Solicite agora uma avaliação gratuita" /><jsp:param
-		name="meta_description"
-		value="Faça agora mesmo um teste gratuito na plataforma SULTS | Solicite uma avaliação e experimente por 14 dias gratuitamente!" /></jsp:include><style>
+	href="https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp"
+	as="image">
+<jsp:include page="/sults/components/default/include_meta.jsp">
+	<jsp:param name="meta_title"
+		value="SULTS: Solicite agora uma avaliação gratuita" />
+	<jsp:param name="meta_description"
+		value="Faça agora mesmo um teste gratuito na plataforma SULTS | Solicite uma avaliação e experimente por 14 dias gratuitamente!" />
+</jsp:include>
+<style>
 body {
-	background-image:
-		url("/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp");
-	background-size: cover;
-	background-position: top;
+	/* background-image: url("https://www.sults.com.br/sults/images/ilustracoes/primaria/criar-conta-fundo-sults.webp");
+            background-size: cover; */
+	/* background-position: top; */
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	/* height: 100%;
+            min-height: 100vh; */
+	/* display: flex; */
+	/* justify-content: center;
+            align-items: center;
+            background: #202c3a; */
 	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .conta-register-section {
 	margin: 0;
 	width: 100%;
-	max-width: 700px;
+	/*max-width: 1440px;*/ 
 	overflow-x: auto;
-	max-height: 95vh;
-	border-radius: 12px;
+	/*  max-height: 90vh; */
+	/* border-radius: 12px;*/
 }
 
 .register-link {
@@ -51,7 +56,10 @@ body {
 	padding: 2rem;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 12px;
+	/*border-radius: 12px;*/
+	justify-content: center;
+	/* max-width: 600px; */
+	min-height: 100vh;
 }
 
 .conta-success-container {
@@ -69,9 +77,9 @@ body {
 }
 
 @media ( max-width : 768px) {
-	body {
-		background-image: none !important;
-	}
+	/* body {
+                background-image: none !important;
+            } */
 	.conta-register-container, .conta-success-container {
 		padding: 0 1rem !important;
 	}
@@ -88,28 +96,39 @@ body {
 	.conta-register-section {
 		overflow-x: visible;
 	}
+	.conta-register-container form+p, h1 {
+		width: 100%;
+	}
 }
 
 @media ( min-width : 768px) {
 	.form-register {
 		width: 75%;
 	}
-	.scroll {
-		overflow: auto;
-		float: left;
-		margin: 0 10px;
+	.conta-register-container form+p, h1 {
+		width: 75%;
 	}
-	.scroll::-webkit-scrollbar-thumb {
-		background: #666;
-		border-radius: 20px;
-	}
-	.scroll::-webkit-scrollbar {
-		width: 8px;
-	}
-	.scroll::-webkit-scrollbar-track {
-		background: #ddd;
-		border-radius: 20px;
-	}
+
+	/*    .scroll {
+                overflow: auto;
+                float: left;
+                margin: 0 10px;
+            }
+
+            .scroll::-webkit-scrollbar-thumb {
+                background: #666;
+                border-radius: 20px;
+            }
+
+            .scroll::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .scroll::-webkit-scrollbar-track {
+                background: #ddd;
+                border-radius: 20px;
+            }
+            */
 }
 
 .form-group {
@@ -154,7 +173,7 @@ input:focus {
 	margin-top: 14px;
 	width: 100%;
 	gap: 6px;
-	background: linear-gradient(#00acac 0, #00acac 100%);
+	background: linear-gradient(#1B7EDA 0, #1B7EDA 100%);
 	color: white;
 	opacity: 1;
 	cursor: pointer;
@@ -162,10 +181,11 @@ input:focus {
 	font-weight: 700;
 	border-radius: 6px;
 	border: none;
+	margin-bottom: 42px;
 }
 
 .register-button:hover, .register-button:focus {
-	background: linear-gradient(#00a1a1 0, #00a1a1 100%);
+	background: linear-gradient(#0285ff 0, #1980e0 100%);
 }
 
 .register-button:focus {
@@ -176,7 +196,8 @@ input:focus {
 	margin: 0;
 	font-weight: 400;
 	font-size: 1rem;
-	text-align: center;
+
+	/* text-align: center; */
 }
 
 .login-error-message {
@@ -252,18 +273,31 @@ input:focus {
 }
 
 100
+ 
 %
 {
 -webkit-transform
 :
-rotate(
+
+                    
+rotate
+(
 270deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+
+                    
+rotate
+(
 270deg
-);
+)
+;
+
+            
 }
 }
 @
@@ -273,18 +307,31 @@ keyframes rotator { 0% {
 }
 
 100
+ 
 %
 {
 -webkit-transform
 :
-rotate(
+
+                    
+rotate
+(
 270deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+
+                    
+rotate
+(
 270deg
-);
+)
+;
+
+            
 }
 }
 .path {
@@ -304,134 +351,289 @@ rotate(
 }
 
 50
+ 
 %
 {
 stroke-dashoffset
 :
-46.75;
+ 
+46
+.75
+;
+
+                
 -webkit-transform
 :
-rotate(
+ 
+rotate
+(
 135deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+ 
+rotate
+(
 135deg
-);
+)
+;
+
+            
 }
 100
+ 
 %
 {
 stroke-dashoffset
 :
-187;
+ 
+187
+;
+
+                
 -webkit-transform
 :
-rotate(
+ 
+rotate
+(
 450deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+ 
+rotate
+(
 450deg
-);
+)
+;
+
+            
 }
 }
 @
 keyframes dash { 0% {
 	stroke-dashoffset: 187;
 }
+
 50
+ 
 %
 {
 stroke-dashoffset
 :
-46.75;
+ 
+46
+.75
+;
+
+                
 -webkit-transform
 :
-rotate(
+ 
+rotate
+(
 135deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+ 
+rotate
+(
 135deg
-);
+)
+;
+
+            
 }
 100
+ 
 %
 {
 stroke-dashoffset
 :
-187;
+ 
+187
+;
+
+                
 -webkit-transform
 :
-rotate(
+ 
+rotate
+(
 450deg
-);
+)
+;
+
+                
 transform
 :
-rotate(
+ 
+rotate
+(
 450deg
-);
+)
+;
+
+            
 }
 }
+.content-img-register {
+	width: 100%;
+	background: #fbfdfe;
+	/* border-radius: 8px; */
+	box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+	overflow: hidden;
+	grid-template-columns: 60% 40%;
+	display: grid;
+	z-index: 1000;
+}
+
+.left-logo-div {
+    /* background-size: contain;
+    width:50wh;
+     height: 100vh; */
+    
+    background: #202c3a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+
+}
+
+/* .teste {
+width: 100%;
+height:100%;
+	background-image: url("/Column.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+     
+    
+    
+} */
+
+/*
+.left-logo-div img {
+
+	width:50wh;
+	height:100vh;
+	  object-fit: contain; 
+  
+}
+*/
+
+.copy {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+.copy img {
+	margin-bottom: 15px;
+}
+
+@media ( max-width : 1100px) {
+	.left-logo-div, .copy {
+		display: none;
+	}
+	.content-img-register {
+		grid-template-columns: 100%;
+	}
+}
+
+@media ( min-width : 1100px) and (max-width: 1347px) {
+	.content-img-register {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+
 </style>
 </head>
+
 <body>
 	<main>
-		<section class="conta-register-section scroll">
-			<div class="conta-register-container">
-				<h1
-					style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: center; line-height: 1.2; margin-bottom: 40px">
-					Crie sua conta SULTS grátis</h1>
-				<form name="form-register" class="form-register" method="post">
-					<div class="form-group">
-						<label for="name">Nome</label><input type="text" name="name"
-							id="name" class="form-control" placeholder="Informe seu nome">
-						<div id="error-name" class="login-error-message"></div>
+		<section class="conta-register-section">
+			<div class="content-img-register">
+				<div class="left-logo-div" role="img" arial-label="sults imagem de cadastro">
+					<div class="teste"><img class="img-logo" src="Column.webp" alt="sults cadastro"></div>
+					<!-- <img src="sults/images/ilustracoes/primaria/criar-conta-fundo-signup2.webp"> -->
 					</div>
-					<div class="form-group">
-						<label for="company">Nome da empresa</label><input type="text"
-							name="company" id="company" class="form-control"
-							placeholder="Informe sua empresa">
-						<div id="error-company" class="login-error-message"></div>
+				<div class="conta-register-container">
+					<h1
+						style="color: #032d60; font-size: 2.5rem; font-weight: 700; text-align: left; line-height: 1.2; margin-bottom: 40px;">
+						Seu espaço de trabalho começa aqui</h1>
+
+					<form name="form-register" class="form-register" method="post">
+						<div class="form-group">
+							<label for="name">Nome</label><input type="text" name="name"
+								id="name" class="form-control" placeholder="Informe seu nome">
+							<div id="error-name" class="login-error-message"></div>
+						</div>
+						<div class="form-group">
+							<label for="company">Nome da empresa</label><input type="text"
+								name="company" id="company" class="form-control"
+								placeholder="Informe sua empresa">
+							<div id="error-company" class="login-error-message"></div>
+						</div>
+						<div class="form-group">
+							<label for="email">E-mail corporativo</label><input type="text"
+								name="email" id="email" class="form-control"
+								placeholder="Informe seu endereço de e-mail">
+							<div id="error-email" class="login-error-message"></div>
+						</div>
+						<div class="form-group">
+							<label for="phone">Telefone com DDD</label><input type="text"
+								name="phone" id="phone" class="form-control"
+								placeholder="Informe seu telefone ou celular"
+								oninput="applyPhoneMask(this)" maxlength="15">
+							<div id="error-phone" class="login-error-message"></div>
+						</div>
+						<button type="button" class="register-button"
+							aria-label="Criar conta grátis" onclick="RegisterFormSubmit()">
+							Criar conta
+							<svg class="spinner" width="18" height="18" viewBox="0 0 66 66"
+								xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none"
+									stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                            </svg>
+						</button>
+					</form>
+					<!-- <p style="margin: 24px 0 8px">
+                        Ao criar sua conta você concorda com nossos <a href="https://policies.sults.com.br/termos-de-uso"
+                            target="_blank" rel="noreferrer" class="register-link">Termos de uso</a> e <a
+                            href="https://policies.sults.com.br/politica-de-privacidade" target="_blank" rel="noreferrer"
+                            class="register-link">Política
+                            de privacidade</a>.
+                    </p> -->
+					<p>
+						Já tem uma conta? <a href="https://app.sults.com.br"
+							class="register-link">Fazer login</a>
+
+
+					</p>
+
+					<div class="copy">
+						<img
+							src="/sults/images/logo/sults/completa/sults-logo-oficial.svg"
+							width="95" height="24" alt="Logo oficial da SULTS completa">
+						<p>© 2024 SULTS Tecnology. All Rights Reserved.</p>
 					</div>
-					<div class="form-group">
-						<label for="email">E-mail corporativo</label><input type="text"
-							name="email" id="email" class="form-control"
-							placeholder="Informe seu endereço de e-mail">
-						<div id="error-email" class="login-error-message"></div>
-					</div>
-					<div class="form-group">
-						<label for="phone">Telefone com DDD</label><input type="text"
-							name="phone" id="phone" class="form-control"
-							placeholder="Informe seu telefone ou celular"
-							oninput="applyPhoneMask(this)" maxlength="15">
-						<div id="error-phone" class="login-error-message"></div>
-					</div>
-					<button type="button" class="register-button"
-						aria-label="Criar conta grátis" onclick="RegisterFormSubmit()">
-						Criar conta grátis
-						<svg class="spinner" width="18" height="18" viewBox="0 0 66 66"
-							xmlns="http://www.w3.org/2000/svg">
-							<circle class="path" fill="none" stroke-width="6"
-								stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
-					</button>
-				</form>
-				<p style="margin: 24px 0 8px">
-					Ao criar sua conta você concorda com nossos <a
-						href="https://policies.sults.com.br/termos-de-uso" target="_blank"
-						rel="noreferrer" class="register-link">Termos de uso</a> e <a
-						href="https://policies.sults.com.br/politica-de-privacidade"
-						target="_blank" rel="noreferrer" class="register-link">Política
-						de privacidade</a>.
-				</p>
-				<p>
-					Já tem uma conta? <a href="https://app.sults.com.br"
-						class="register-link">Fazer login</a>
-				</p>
+				</div>
 			</div>
 			<div class="conta-success-container">
 				<h2 id="nameRegister"
@@ -457,12 +659,12 @@ rotate(
 					<img src="/sults/images/icones/contato/error-modal-icon.webp"
 						loading="lazy" alt="E-mail Error Ícone" width="68" height="68">
 					<h4
-						style="color: rgba(3, 45, 96, 1); font-weight: 700; font-size: 1.5rem; text-align: center; margin-bottom: 0; line-height: 1.2">Oops!
-						Algo de errado aconteceu!</h4>
+						style="color: rgba(3, 45, 96, 1); font-weight: 700; font-size: 1.5rem; text-align: center; margin-bottom: 0; line-height: 1.2">
+						Oops! Algo de errado aconteceu!</h4>
 					<p
-						style="color: rgba(95, 102, 108, 1); font-weight: 400; font-size: 1rem; text-align: center; margin-top: 0;">Desculpe,
-						não conseguimos processar sua solicitação, nossa equipe será
-						notificada. Por favor, tente novamente mais tarde.</p>
+						style="color: rgba(95, 102, 108, 1); font-weight: 400; font-size: 1rem; text-align: center; margin-top: 0;">
+						Desculpe, não conseguimos processar sua solicitação, nossa equipe
+						será notificada. Por favor, tente novamente mais tarde.</p>
 					<button type="button" id="closeModalError"
 						aria-label="Fechar Modal" class="contact-button"
 						style="text-align: center; width: 100%">Fechar</button>
@@ -486,7 +688,7 @@ rotate(
 					(a.withCredentials = !1),
 					a
 							.open("POST",
-									"https://m4388lxmy5.execute-api.us-east-1.amazonaws.com/prod/site/request-demo"),
+									"https://3sksqeptx3.execute-api.us-east-1.amazonaws.com/prod/site/request-demo"),
 					a.setRequestHeader("Content-Type", "application/json"),
 					(a.onload = function() {
 						if (a.status === 200) {
@@ -590,4 +792,5 @@ rotate(
 		};
 	</script>
 </body>
+
 </html>
